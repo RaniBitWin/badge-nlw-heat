@@ -1,6 +1,6 @@
 const LinksSocialMedia = {
   github: 'RaniBitWin',
-  youtube: 'RaniBitWin',
+  youtube: 'channel/UCO0jnL7E5hjfr32JSzWrMfA',
   facebook: 'ranieler',
   instagram: 'raniboywin',
   twitter: 'RaniWin19398237'
