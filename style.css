@@ -22,7 +22,7 @@ body {
     background: url(images/background.svg) no-repeat center/cover;
      display: block;
    }   
-   main{/*Desktop*/
+   .desktop{/*Desktop*/
     background: url(images/desktop.svg) no-repeat center/cover;
     display: none;  
    }
