@@ -27,7 +27,7 @@ body {
     display: none;  
    }
 }
-@media (min-width: 1px) {
+@media (min-width: 701px) {
   main{/*Mobile*/
     background: url(images/background.svg) no-repeat center/cover;
      display: none;
