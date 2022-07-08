@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Raniele Ribeiro - NLW Heat</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>       
+    <svg width="200" height="200">
+    
+        <filter id="innerShadow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur"/>
+            <feOffset in="blur" dx="2.5" dy="2.5"/>
+        </filter>
+    
+        <g>
+            <circle id="shadow" style="fill:rgba(0,0,0,0.1)" cx="97" cy="100" r="87" filter="url(#innerShadow)"></circle>
+            <circle id="circle" style="stroke: #FFF; stroke-width: 1px; fill: transparent" cx="100" cy="100" r="80"></circle>
+        </g>
+        <g>
+            <line x1="100" y1="100" x2="100" y2="55" transform="rotate(80 100 100)" style="stroke-width: 3px; stroke: #fffbf9;" id="hourhand">
+                <animatetransform attributeName="transform"
+                                  attributeType="XML"
+                                  type="rotate"
+                                  dur="43200s"
+                                  repeatCount="indefinite"/>
+            </line>
+            <line x1="100" y1="100" x2="100" y2="40" style="stroke-width: 4px; stroke: #fdfdfd;" id="minutehand">
+                <animatetransform attributeName="transform"
+                                  attributeType="XML"
+                                  type="rotate"
+                                  dur="3600s"
+                                  repeatCount="indefinite"/>
+            </line>
+            <line x1="100" y1="100" x2="100" y2="30" style="stroke-width: 2px; stroke: #C1EFED;" id="secondhand">
+                <animatetransform attributeName="transform"
+                                  attributeType="XML"
+                                  type="rotate"
+                                  dur="60s"
+                                  repeatCount="indefinite"/>
+            </line>
+        </g>
+        <circle id="center" style="fill: black; stroke: #C1EFED; stroke-width: 2px;" cx="100" cy="100" r="3"></circle>
+    </svg>
+      
+      <main>              
+      <div class="container">                       
+        <div class="avatar">
+          <span>
+            <img  src="images/build.svg" alt="Selo Rocketseat" />
+          </span>          
+         <img
+            src="https://lorempixel.com/185/185/people/"
+            alt="Foto pessoal"
+            id="UserImage"         
+          />                   
+        </div>
+      </svg>  
+        <h1 id="userName">Raniele Ribeiro</h1>
+        <a id="userLink" href="https://github.com/maykbrito" target="_blank">
+          <img src="images/github.svg" alt="ícone github" />
+          <span id="userLogin">maykbrito</span></a
+        >
+
+        <p id="userBio">
+          An instructor focused on helping pople start programming for web
+        </p>
+
+        <ul id="socialLinks">
+          <li class="youtube">
+            <a href="https://youtube.com/maykbrito" target="_blank" rel="noopener noreferrer">
+              <div class='zoom'>
+                <img  src="images/youtube.svg" alt="ícone youtube" class='img-responsive' />
+              </div>              
+            </a>
+          </li>
+          <li class="facebook">           
+            <a href="https://facebook.com/maykbrito" target="_blank" rel="noopener noreferrer">
+              <div class='zoom'>
+                <img src="images/facebook.svg" alt="ícone facebook" class='img-responsive'  />
+              </div>
+              
+            </a>
+          </li>
+          <li class="instagram">
+            <a href="https://instagram.com/maykbrito" target="_blank" rel="noopener noreferrer">
+              <div class='zoom'>
+                <img src="images/instagram.svg" alt="ícone instagram" class='img-responsive' />
+              </div>
+              
+            </a>
+          </li>
+          <li class="twitter">
+            <a href="https://twitter.com/maykbrito" target="_blank" rel="noopener noreferrer">
+              <div class='zoom'>
+                <img src="images/twitter.svg" alt="ícone twitter" class='img-responsive' />
+              </div>
+              
+            </a>
+          </li>
+        </ul>
+      </div>           
+    </main>  
+         
+    <script src="main.js"></script> 
+
+  </body>
+</html>
